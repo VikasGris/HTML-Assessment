@@ -1,8 +1,12 @@
 body{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    
+}
+*{
+    position: relative;
+}
+p{
     font-size: 12px;
-    color: #901F21; 
 }
 .header{
     background-repeat: no-repeat;
@@ -10,12 +14,13 @@ body{
     clear: both;
     width: 100%;
 }
-.header, #block1, #block2{
+.header, #block1, #block2,#block3, #block4{
     clear: both;
     width: 100%;
     background-repeat: no-repeat;
     background-position: top center;
-}
+} 
+
 
 .menu{
     float: left;
@@ -112,7 +117,7 @@ text-decoration: none;
     position: absolute;
 
 }
-.content{
+#content{
     width: 1300px;
     margin: auto;
 }
@@ -129,7 +134,7 @@ text-decoration: none;
     font-size: 11.95px;
     color: #901F21;
 }
-.content1 a{
+.content1 a, .cont3link a{
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -206,10 +211,6 @@ text-decoration: none;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-#content {
-    width: 1300px;
-    margin: 0 auto;
-}
 .role {
     float: left;
     height: 360px;
@@ -266,6 +267,148 @@ text-decoration: none;
     margin-right: 0;
     background-image: url(link6.jpg);
 }
+#block3{
+    height: 872px;
+}
+.racine{
+    margin: 0 0 0 65px;
+    float: left;
+    opacity: 0;
+
+}
+.animation{
+    opacity: 1;
+    animation-name: racine;
+    animation-duration: 3s;
+}
+.three{
+    text-align: center;
+    width: 60px;
+    font-weight: bold;
+    font-size: 56px;
+    color:white;
+    float: left;
+    margin: -108px 0 0 692px;
+}
+.tasty-potato{
+    position: relative;
+    float: left;
+    margin: -128px 0 0 331px;
+    opacity: 0;
+}
+.potato-animation{
+    opacity: 1;
+    animation-name: tasty-potato;
+    animation-duration: 3s;
+}
+.cont3link{
+    margin: 17px 0 0 479px;
+}
+.link7, .link8, .link9 {
+    display: block;
+    float: left;
+    width: 84px;
+    margin: 0 24px 0 0;
+    height: 40px;
+    padding-top: 6px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url(link7.jpg);
+}
+.link8 {
+    width: 98px;
+    margin-right: 21px;
+    background-image: url(link8.jpg);
+}
+.link9 {
+    width: 180px;
+    margin-right: 0;
+    background-image: url(link9.jpg);
+}
+#block4{
+    height: 1350px;
+}
+.cloud{
+    width: 1500px;
+    margin: 0 auto;
+    height: 210px;
+}
+.cloud1{
+    margin: 80px 0 0 18px;
+    animation-name: cloud1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.cloud2{
+    margin: 70px 0 0 35px;
+    animation-name: cloud2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.cloud3{
+    margin: 70px 0 0 110px;
+    animation-name: cloud3;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.cloud4{
+    margin: 70px 0 0 35px;
+    animation-name: cloud4;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.cloud1, .cloud2, .cloud3, .cloud4{
+    float: left;
+}
+.content4{
+    width: 650px;
+    margin: 410px auto 0 auto;
+    color: #007FC0; 
+}
+.cont4img{
+    opacity: 0;
+}
+.cont4img-animation{
+    opacity: 1;
+    animation-name: keepness;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+.content4 p{
+    width: 436px;
+    font-weight: bold;
+}
+.cont4para-animation{
+    opacity: 1;
+    animation-name: para;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+
+}
+.cont4link{
+    margin: 10px 0 0 0;
+    float: left;
+}
+.link10, .link11{
+    display: block;
+    float: left;
+    width: 114px;
+    margin: 0 24px 0 0;
+    height: 40px;
+    color: white;
+    padding-top: 6px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url(link10.jpg);
+}
+.link11{
+    width: 170px;
+    background-image: url(link11.jpg);
+}
 @media screen and (min-width: 511px) and (max-width: 900px)
 {
 body {
@@ -300,6 +443,112 @@ body {
     }
     100%{
         transform: rotate(0deg);
+    }
+}
+@keyframes racine{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes tasty-potato{
+    0%{
+        opacity: 0;
+        transform: translateX(800px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes cloud1{
+    0%{
+        transform: translate(17px,5px);
+    }
+    30%{
+        transform: translate(15px,8px);
+    }
+    55%{
+        transform: translate(17px, 5px);
+    }
+    70%{
+        transform: translate(15px,10px);
+    }
+    100%{
+        transform: translate(17px, 5px);
+    }
+}
+@keyframes cloud2{
+    0%{
+        transform: translate(10px,5px);
+    }
+    30%{
+        transform: translate(15px,8px);
+    }
+    55%{
+        transform: translate(17px, 5px);
+    }
+    70%{
+        transform: translate(15px,10px);
+    }
+    100%{
+        transform: translate(10px, 5px);
+    }
+}
+@keyframes cloud3{
+    0%{
+        transform: translate(15px,5px);
+    }
+    25%{
+        transform: translate(15px,8px);
+    }
+    50%{
+        transform: translate(17px, 5px);
+    }
+    75%{
+        transform: translate(15px,10px);
+    }
+    100%{
+        transform: translate(10px, 5px);
+    } 
+}
+@keyframes cloud4{
+    0%{
+        transform: translate(15px,5px);
+    }
+    25%{
+        transform: translate(15px,8px);
+    }
+    50%{
+        transform: translate(17px, 5px);
+    }
+    75%{
+        transform: translate(15px,10px);
+    }
+    100%{
+        transform: translate(10px, 5px);
+    } 
+}
+@keyframes keepness{
+    0%{
+        opacity: 0;
+        transform: translateX(800px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes para{
+    0%{
+        opacity: 0;
+        transform: translateX(-800px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
  @media screen and (min-width: 901px) and (max-width: 1300px)
@@ -380,14 +629,14 @@ body {
 }
 @media screen and (min-width: 511px) and (max-width: 900px)
 {
-.content {
+#content {
     margin: 0 0 0 0;
     width: 100%;
 }
 }
 @media screen and (min-width: 1px) and (max-width: 510px)
 {
-.content {
+#content {
     margin: 0 0 0 0;
     width: 100%;
 }
@@ -436,7 +685,7 @@ body {
 }
 @media screen and (min-width: 511px) and (max-width: 900px)
 {
-.content img {
+#content img {
     height: auto;
     max-width: 100%;
 }
@@ -485,14 +734,6 @@ body {
     
 }
 }
-@media screen and (min-width: 511px) and (max-width: 900px)
-{
-#content {
-    height: auto;
-    max-width: 100%;
-    
-}
-}
 @media screen and (min-width: 901px) and (max-width: 1300px)
 {
 #content {
@@ -518,10 +759,32 @@ body {
     margin: 0 0 8px 49%;
 }
 }
+@media screen and (min-width: 511px) and (max-width: 900px)
+{
+.video {
+    margin: 0 0 15px 0;
+    float: none;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding-top: 85px;
+    z-index: 10000;
+}
+}
 @media screen and (min-width: 901px) and (max-width: 1300px)
 {
 .cont2 {
     margin: 0 0 5px 49%;
+}
+}
+@media screen and (min-width: 511px) and (max-width: 900px)
+{
+.cont2 {
+    color: #000;
+    margin: 0 0 0 20%;
+    opacity: 1;
+    width: 60%;
+    text-align: center;
 }
 }
 @media screen and (min-width: 901px) and (max-width: 1300px)
@@ -529,4 +792,185 @@ body {
 .cont2link {
     margin: 15px 0 0 35%;
 }
+}
+@media screen and (min-width: 511px) and (max-width: 900px)
+{
+.cont2link , .cont3link{
+    margin: 22px 0 0 0;
+    text-align: center;
+    width: 100%;
+    float: none;
+    clear: both;
+}
+}
+@media screen and (min-width: 511px) and (max-width: 900px)
+{
+.cont2link a, .cont3link a{
+    background-color: #B31F21;
+    color: white;
+}
+}
+@media screen and (min-width: 511px) and (max-width: 900px)
+{
+.link4, .link5, .link6, .link7{
+    float: none;
+    display: inline-block;
+    background: none;
+    margin: 0 0 10px 3px;
+    padding-bottom: 0;
+    height: 22px;
+}
+}
+@media screen and (min-width: 1101px) and (max-width: 1400px)
+{
+div .racine {
+    margin: 0 0 0 -10px;
+}
+}
+@media screen and (min-width: 901px) and (max-width: 1300px)
+{
+.racine {
+    margin: 0 0 0 -215px;
+}
+}
+@media screen and (min-width: 511px) and (max-width: 900px)
+{
+.racine {
+    margin: 293px 0 0 -305px;
+}
+}
+@media screen and (min-width: 901px) and (max-width: 1300px)
+{
+#content {
+    margin: 0 0 0 1%;
+    width: 98%;
+}
+}
+@media screen and (min-width: 1101px) and (max-width: 1400px)
+{
+div .three {
+    margin: -115px 0 0 728px;
+}
+}
+@media screen and (min-width: 901px) and (max-width: 1400px)
+{
+div .three {
+    margin: -108px 0 0 532px;
+    
+}
+}
+@media screen and (min-width: 511px) and (max-width: 900px)
+{
+.three {
+    margin: -114px 0 0 439px;
+}
+}
+@media screen and (min-width: 1101px) and (max-width: 1400px)
+{
+.tasty-potato {
+    margin: -114px 0 0 26%;
+}
+}
+@media screen and (min-width: 901px) and (max-width: 1300px)
+{
+.tasty-potato {
+    margin: -114px 0 0 12%;
+}
+}
+@media screen and (min-width: 511px) and (max-width: 900px)
+{
+.tasty-potato {
+    margin: -107px 0 0 67px;
+    width: 300px;
+    clear: both;
+}
+}
+@media screen and (min-width: 901px) and (max-width: 1400px)
+{
+.tasty {
+    display: inline-block;
+    clear: both;
+    margin: -30px 0 0 365px;
+}
+}
+@media screen and (min-width: 1101px) and (max-width: 1400px)
+{
+.tasty {
+    margin: -30px 0 0 587px;
+}
+}
+
+@media screen and (min-width: 511px) and (max-width: 900px)
+{
+.tasty {
+    display: block;
+    margin: 0 0 0 80px;
+    clear: both;
+}
+}
+@media screen and (min-width: 901px) and (max-width: 1400px)
+{
+.cont3link {
+    margin: 12px 0 0 33%;
+}
+}
+@media screen and (min-width: 511px) and (max-width: 900px)
+{
+#block3 {
+    background-image: url(bloc3responsive.jpg);
+    background-position: bottom center;
+    height: 1250px;
+}
+}
+@media screen and (min-width: 901px) and (max-width: 1400px)
+{
+#block3 {
+    background-image: url(bloc3responsive.jpg);
+    background-position: bottom center;
+    height: 1114px;
+}
+}
+@media screen and (min-width: 511px) and (max-width: 900px)
+{
+#block4 {
+    height: auto;
+}
+}
+@media screen and (min-width: 1px) and (max-width: 1400px)
+{
+#block4 {
+    background-image: url(bloc4.jpg);
+}
+}
+
+@media screen and (min-width: 100px) and (max-width: 1400px)
+{
+.cloud {
+    width: 1300px;
+}
+}
+@media screen and (min-width:511px) and (max-width:900px){
+    .content4{
+        margin: 400px 0 0 0;
+        width: 100%;
+    }
+}
+@media screen and (min-width:511px) and (max-width:900px){
+    .cont4img{
+        text-align: center;
+    }
+}
+@media screen and (min-width:511px) and (max-width:900px){
+    .content4 p{
+        
+        width: 86%;
+        margin: 10px 0 12px 6%;
+        text-align: center;
+    }
+}
+@media screen and (min-width:511px) and (max-width:900px){
+    .cont4link {
+        width: 85%;
+        margin: 10px 0 12px 26%;
+    }
 }
