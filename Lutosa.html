@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Lutosa.css">
+    <script src="Lutosa.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -17,14 +18,16 @@
 </head>
 <body>
     <div class="header">
-        <!-- <div class="fat-nav">
+        <div class="fat-nav active">
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
+                  <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>                       
                 </button>
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
@@ -39,7 +42,7 @@
               </div>
             </div>
           </nav>
-        </div> -->
+        </div>
         <div class="menu">
             <ul>
                 <li><a href="#">BLOG</a></li>
@@ -53,9 +56,55 @@
         <div id="lang">
             <ul>
                 <li class="language"><a href="#">EN</a></li>
-                
             </ul>
         </div>
+    </div>
+    <div id="block1">
+      <div class="content">
+        <div class="content-left">
+          <img src="point1.jpg" alt="Passion for potatoes">
+          <div class="content1">
+            <p>In Lutosa’s world, potatoes are our passion. The ideal terrain, outstanding expertise, and people of talent, all contribute to the production of the jewel of Belgian cuisine. It is no coincidence that in Belgium “having french fries” means being full of energy…
+            </p>
+            <a href="" class="link1">Mission</a>
+            <a href="" class="link2">I love Belgian fries</a>
+            <a href="" class="link3">Organisation</a>
+          </div>
+        </div>
+        <div class="content-right">
+            <img src="cornet.jpg" alt="Cornet">
+        </div>
+      </div>
+    </div>
+    <div id="block2">
+      <div id="content">
+        <div class="role">
+          <div class="role1">
+            <img src="roue1.png" alt="role1">
+          </div>
+          <div class="role2">
+            <img src="roue2.png" alt="role2">
+          </div>
+          <div class="role3">
+            <img src="roue3.png" alt="role3">
+          </div>
+          <div class="role4">
+            <img src="roue4.png" alt="role4">
+          </div>
+          <div id="number">2</div>
+        </div>
+        <div class="video">
+          <iframe width="300" height="210" src="https://www.youtube-nocookie.com/embed/pZV7oBaNmq0?list=PLnzj0NOISqGVTvBPX_siyLscWXx7ZA_Fr&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <div class="cont2">
+          <p>If you mention the good weather to a Belgian, he will complain about the rain. Yet potato growers will tell you that the Belgian weather is perfect. Temperate with rain that replenishes the sandy, silty soil. It is as perfect as the partnerships that we establish with farmers and the many links in the supply chain…</p>
+        </div>
+        <div class="cont2link">
+            <a href="" class="link4">Cultivation</a>
+            <a href="" class="link5">Storage</a>
+            <a href="" class="link6">Potato varieties</a>
+        </div>
+      </div>
     </div>
 </body>
 </html>
